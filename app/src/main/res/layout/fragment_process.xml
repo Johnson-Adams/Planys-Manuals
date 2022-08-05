@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/processstepno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/actionbar"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="font/gabriola"
+                android:text="Step"/>
+
+            <ImageView
+                android:id="@+id/addimageprocess"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/processstepno"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/addnewimage"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/addpointsprocess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/actionbar"
+                android:hint="Add Text Here"
+                android:textColor="@color/lightcolorlogo"
+                android:textColorHint="@color/lit"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/addimageprocess"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <Button
+                android:id="@+id/deletestepcreateprocess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addpointsprocess"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/deletetopic"/>
+
+            <Button
+                android:id="@+id/savecreateprocess"
+                android:background="@drawable/savenewpointindnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/addpointsprocess"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

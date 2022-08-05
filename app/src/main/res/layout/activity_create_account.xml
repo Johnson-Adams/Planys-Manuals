@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-117dp"
+            app:srcCompat="@drawable/planyssymbol" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView11"
+            android:layout_marginTop="445dp"
+            app:srcCompat="@drawable/createempforgetpswd" />
+
+        <EditText
+            android:id="@+id/createpswd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView11"
+            android:layout_marginTop="385dp"
+            android:hint="atleast 6 characters"
+            android:textColorHint="@color/lit"
+            android:ems="10"
+            android:textColor="@color/lightcolorlogo"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView9"
+            android:layout_marginTop="345dp"
+            app:srcCompat="@drawable/createemppswd" />
+
+        <EditText
+            android:id="@+id/createemail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="XX@planystech.com"
+            android:textColorHint="@color/lit"
+            android:backgroundTint="@color/lightcolorlogo"
+            android:layout_alignStart="@+id/imageView9"
+            android:layout_marginTop="285dp"
+            android:ems="10"
+            android:textColor="@color/lightcolorlogo"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView9"
+            android:layout_marginTop="245dp"
+            app:srcCompat="@drawable/createempemail" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/createempno"
+            android:layout_marginTop="145dp"
+            app:srcCompat="@drawable/createempname" />
+
+        <EditText
+            android:id="@+id/createempno"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="185dp"
+            android:textColorHint="@color/lit"
+            android:backgroundTint="@color/lightcolorlogo"
+            android:ems="10"
+            android:hint="EM00XX"
+            android:textColor="@color/lightcolorlogo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/confirmpswd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="485dp"
+            android:backgroundTint="@color/lightcolorlogo"
+            android:hint="atleast 6 charachers"
+            android:textColorHint="@color/lit"
+            android:textColor="@color/lightcolorlogo"
+            android:layout_alignStart="@+id/imageView11"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/createuserbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmpswd"
+            android:background="@drawable/createuserbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

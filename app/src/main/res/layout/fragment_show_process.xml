@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/process_step_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step X"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="28dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/actionbar"/>
+
+        <ImageView
+            android:id="@+id/process_show_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/process_step_x"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/addnewimage"/>
+
+        <TextView
+            android:id="@+id/process_show_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/process_show_image"
+            android:textColor="@color/lightcolorlogo"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="abcd"/>
+    </RelativeLayout>
+
+</RelativeLayout>

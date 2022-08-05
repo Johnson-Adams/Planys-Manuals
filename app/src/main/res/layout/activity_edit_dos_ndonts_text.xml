@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDosNDonts_text">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DO :"
+                android:textSize="30sp"
+                android:textColor="@color/actionbardark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/edit_do_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/addnewpoint"/>
+
+            <LinearLayout
+                android:id="@+id/edit_text_do_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dos"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/donts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DONTS :"
+                android:textSize="30sp"
+                android:textColor="@color/actionbardark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/edit_text_do_layout" />
+
+            <Button
+                android:id="@+id/edit_dont_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_text_do_layout"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/addnewpoint"/>
+
+            <LinearLayout
+                android:id="@+id/edit_text_dont_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_below="@id/donts"></LinearLayout>
+
+            <Button
+                android:id="@+id/edit_dnd_text_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/edit_text_dont_layout"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/savenewpointindnd"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

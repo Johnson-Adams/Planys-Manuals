@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="90dp">
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/edittitlefields"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edittopictextfield"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/actionbar"
+            android:textColorHint="@color/actionbar" />
+
+        <ImageView
+            android:id="@+id/deletetitleiconback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edittitlefields"
+            android:layout_toEndOf="@+id/savetitleiconback"
+            app:srcCompat="@drawable/edittopicdeltextbg" />
+
+        <ImageView
+            android:id="@+id/savetitleiconback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edittitlefields"
+            android:layout_toEndOf="@+id/edittitlefields"
+            app:srcCompat="@drawable/edittopicdeltextbg" />
+
+
+        <ImageView
+            android:id="@+id/deletetitleicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edittitlefields"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/savetitleiconback"
+            app:srcCompat="@drawable/titledeleteicon" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            app:srcCompat="@drawable/linetopic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

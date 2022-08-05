@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "169304697731",
+    "firebase_url": "https://planysmanuals.firebaseio.com",
+    "project_id": "planysmanuals",
+    "storage_bucket": "planysmanuals.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169304697731:android:a3484e16d6c12cf8",
+        "android_client_info": {
+          "package_name": "com.awesome.adams.planysmanuals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169304697731-ml0qc1huppau01ofqfmcqpknga2bvooq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awesome.adams.planysmanuals",
+            "certificate_hash": "14781cb2b23feb900b06f75d6459ff18c69c5901"
+          }
+        },
+        {
+          "client_id": "169304697731-htl9mudeqrffjos4755raiue2669v6ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6jDuKJhvW_AO75ZKmxPb1Zf5AyIaSKGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169304697731-htl9mudeqrffjos4755raiue2669v6ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

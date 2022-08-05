@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.awesome.adams.planysmanuals">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyCzeCigMhYFV9wx6kQuHmuuZhmm7aD487Y"/>
+
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/planyssymbol"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/planyssymbol"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/whitetheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Titles"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".CreateAccount"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".CreateTitle"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ForgetPswd"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".EditTitles"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".Articles"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".CreateArticle"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".Lists"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".CreateList"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".DosNDonts"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".Tutorial"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".Custom"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".DosNDonts_one"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".DosNDonts_two"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateProcess"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".ShowProcess"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".CreateProcessHead"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".UserList"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".CreateTut"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".EditDosNDonts"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".EditTutorial" />
+        <activity
+            android:name=".EditDosNDonts_text"
+            android:theme="@style/ActionBar" />
+        <activity
+            android:name=".Processs"
+            android:theme="@style/ActionBar" />
+        <activity android:name=".EditthisTitle"
+            android:theme="@style/ActionBar"/>
+        <activity android:name=".EditthisArticle"
+            android:theme="@style/ActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/planyssymbol" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginemail"
+        android:layout_marginTop="178dp"
+        app:srcCompat="@drawable/loginuseremailhead" />
+
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:backgroundTint="@color/lightcolorlogo"
+        android:ems="10"
+        android:hint="XX@planystech.com"
+        android:inputType="textPersonName"
+        android:textColor="@color/lightcolorlogo"
+        android:textColorHint="@color/lit" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/loginuserpswdhead" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/buttonlogin" />
+
+    <ImageView
+        android:id="@+id/logincreateaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="475dp"
+        android:layout_marginStart="55dp"
+        app:srcCompat="@drawable/createaccountlogin" />
+
+    <ImageView
+        android:id="@+id/loginforgetpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/logincreateaccount"
+        android:layout_marginEnd="53dp"
+        app:srcCompat="@drawable/forgetpswdlogin" />
+
+    <EditText
+        android:id="@+id/loginpswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/lightcolorlogo"
+        android:textColorHint="@color/lit"
+        android:backgroundTint="@color/lightcolorlogo"/>
+</RelativeLayout>

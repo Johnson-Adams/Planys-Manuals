@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTut">
+
+    <EditText
+        android:id="@+id/tut_new_head"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17.5dp"
+        android:layout_marginTop="40dp"
+        android:hint="Enter Heading for Your Tutorial"
+        android:textColorHint="@color/lit"
+        android:backgroundTint="@color/lightcolorlogo"
+        android:textColor="@color/actionbar"/>
+
+    <ImageView
+        android:id="@+id/tut_new_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tut_new_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/addnewimage"/>
+
+    <EditText
+        android:id="@+id/tut_new_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_below="@+id/tut_new_photo"
+        android:textColor="@color/lightcolorlogo"
+        android:hint="Add Description for Your Tutorial"
+        android:textColorHint="@color/lit"
+        android:backgroundTint="@color/lightcolorlogo"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/submit_new_tut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tut_new_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submitnewtopic"/>
+
+</RelativeLayout>

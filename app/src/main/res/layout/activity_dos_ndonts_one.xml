@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DosNDonts_one">
+
+    <ScrollView
+        android:id="@+id/dosndontsscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/dos_image_add"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/dos"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/addnewimage" />
+
+            <ImageView
+                android:id="@+id/donts_image_add"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/donts"
+                app:srcCompat="@drawable/addnewimage" />
+
+
+            <TextView
+                android:id="@+id/donts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@id/dos_image_desc_add"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:text="DONT's"
+                android:textColor="@color/actionbar"/>
+
+            <TextView
+                android:id="@+id/dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/donts"
+                android:layout_marginTop="35dp"
+                android:text="DO's :"
+                android:textSize="20sp"
+                android:textColor="@color/actionbar"/>
+
+            <EditText
+                android:id="@+id/dos_image_desc_add"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dos_image_add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/lightcolorlogo"
+                android:layout_alignStart="@id/donts"
+                android:textColorHint="@color/lit"
+                android:textColor="@color/lightcolorlogo"
+                android:hint="Add description for Do"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/donts_image_desc_add"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donts_image_add"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:layout_alignStart="@id/donts"
+                android:backgroundTint="@color/lightcolorlogo"
+                android:hint="Add description for Donts"
+                android:textColorHint="@color/lit"
+                android:textColor="@color/lightcolorlogo"
+                android:text="" />
+
+            <Button
+                android:id="@+id/dosndonts_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donts_image_desc_add"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/savenewpointindnd"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
